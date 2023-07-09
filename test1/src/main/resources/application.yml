@@ -1,0 +1,19 @@
+# database ?? ??
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #    ?? PC? ????? Database??? ?? ???.
+    url: jdbc:mysql://127.0.0.1:3306/MySQL80 # Database?? ?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    #    mysql? ??? ??? ?? ??? ?? ???.
+    username: root
+    password: 1234 # ??? mysql ????
+  thymeleaf:
+    cache: false
+
+  # spring data jpa ??
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL57Dialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
